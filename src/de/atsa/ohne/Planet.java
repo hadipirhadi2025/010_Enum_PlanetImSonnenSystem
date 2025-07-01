@@ -1,31 +1,20 @@
 package de.atsa.ohne;
 
 /**
- * <pre>
- *     Enhält Namen, Gewicht und Radius eines Planet
- * </pre>
+ * Enhält Namen, Gewicht und Radius eines Planeten
  */
 public class Planet {
+
     private String name;
-    private double masse ;
+    /** masse in kg */
+    private double masse;
+    /** radius in Meter */
     private double radius;
-    /** echte Werte folgen */
-//    private double abstand;
-//
-//    public Planet(String name, double masse, double radius, double abstand) {
-//        this.name = name;
-//        /** masse inkg */
-//        this.masse = masse;
-//        /** radius in Meter */
-//        this.radius = radius;
-//        this.abstand = abstand;
-//    }
+
 
     public Planet(String name, double masse, double radius) {
         this.name = name;
-        /** masse inkg */
         this.masse = masse;
-        /** radius in Meter */
         this.radius = radius;
     }
 
@@ -40,10 +29,6 @@ public class Planet {
     public double getRadius() {
         return radius;
     }
-
-//    public double getAbstand() {
-//        return abstand;
-//    }
 
     @Override
     public String toString() {
