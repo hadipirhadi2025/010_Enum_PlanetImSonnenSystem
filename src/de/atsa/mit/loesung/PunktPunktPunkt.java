@@ -9,7 +9,7 @@ public class PunktPunktPunkt {
         System.out.println("Mittelwert: "+ mittelertBrechnen(1,67,503,-4, 155, 202, -1001, 200));
     }
 
-    public static int mittelertBrechnen(int ... zahlen){
+    public static int mittelertBrechnen(int... zahlen){
         int summe = 0;
         for (int i = 0; i < zahlen.length; i++) {
             summe = summe + zahlen[i];
