@@ -1,5 +1,11 @@
 package de.atsa.mit.loesung;
 
+import de.atsa.ampel.Ampel;
+import de.atsa.ampel.ApmleInnerClasse;
+
+import java.util.Random;
+import java.util.Scanner;
+
 public class PunktPunktPunkt {
     public static void main(String[] args) {
         System.out.println("der Mittelwert von 17 und 4 ist: " + mittelertBrechnen(17, 4));
@@ -7,8 +13,18 @@ public class PunktPunktPunkt {
         int[] zahlen = {170, 204, -1001};
         System.out.println("Mittelwert: " + mittelertBrechnen(zahlen));
         System.out.println("Mittelwert: "+ mittelertBrechnen(1,67,503,-4, 155, 202, -1001, 200));
+        ausgeben(new Random(), ApmleInnerClasse.Ampelphase.GELB, new Ampel(), new Scanner(System.in), System.in, "Text",101, true, 3.14);
+//        int zahl = 101;
+//        System.out.println(zahl.getClass());
+        Integer zahlObjekt = Integer.valueOf(101);
+        System.out.println(zahlen.getClass().getSimpleName());
     }
 
+    public static  void ausgeben(Object... Objekte){
+        for(Object objekt:Objekte){
+            System.out.println("Das Objekt hat den Typ " + objekt.getClass().getName());
+        }
+    }
     public static int mittelertBrechnen(int... zahlen){
         int summe = 0;
         for (int i = 0; i < zahlen.length; i++) {
