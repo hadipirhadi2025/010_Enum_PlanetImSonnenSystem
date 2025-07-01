@@ -17,7 +17,13 @@ public class PunktPunktPunkt {
 //        int zahl = 101;
 //        System.out.println(zahl.getClass());
         Integer zahlObjekt = Integer.valueOf(101);
-        System.out.println(zahlen.getClass().getSimpleName());
+        System.out.println(zahlObjekt.getClass().getSimpleName());
+        Integer kurz = 22;//Autoboxing : ruft im Hintegrund die valueOf Methode aus Integer auf
+        //Integer ist ein Wrapper fü int
+        Double objDouble = 3.14;//Autoboxing : ruft im Hintegrund die valueOf Methode aus Double auf
+       // objDouble = 1; Kein Autoboxing von int zu Double
+        Object versuch = 2;//Autoboxing: int->Integer
+        String plus = "" + 3;//Autoboxing int->Integer, dann wird vom Integer-Object toString aufgerufen
     }
 
     public static  void ausgeben(Object... Objekte){
